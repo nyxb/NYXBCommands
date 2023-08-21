@@ -1,0 +1,7 @@
+{
+   "extends": ["@nyxb"],
+   "rules": {
+     "react/no-unescaped-entities": 0,
+     "array-callback-return": 0
+   }
+}

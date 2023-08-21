@@ -1,0 +1,35 @@
+{
+  /** EDITOR FORMATING */
+  "editor.formatOnSave": false,
+  "editor.insertSpaces": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+
+  /**
+    * STYLELINT SETUP
+    */
+  "stylelint.enable": true,
+  "stylelint.validate": [
+    "css",
+    "scss",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  /**
+    * to use lint formatting on save
+    */
+  "eslint.format.enable": true,
+  "prettier.enable": true,
+
+  /**
+    * EDITOR UX
+    */
+  "files.insertFinalNewline": true,
+  "editor.trimAutoWhitespace": true,
+  "files.encoding": "utf8",
+  "editor.tabSize": 3
+}

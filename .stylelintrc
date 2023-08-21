@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "@nyxb/stylelint-config"
+  ],
+  "rules": {
+   "no-empty-source": null,
+   "block-no-empty": null,
+   "selector-class-pattern": null,
+   "no-duplicate-selectors": null,
+   "selector-id-pattern": null,
+   "declaration-block-no-duplicate-properties": null,
+   "declaration-block-no-redundant-longhand-properties": null,
+   "property-no-vendor-prefix": null
+  }
+}
