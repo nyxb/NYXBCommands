@@ -1,27 +1,26 @@
-import Command from '../../Command'
-import { CommandUsage } from '../../../../typings'
+import type Command from '../../Command'
+import type { CommandUsage } from '../../../../typings'
 
 export default async (command: Command, usage: CommandUsage) => {
-  const { commandName, instance } = command
-  const { guild, message, interaction } = usage
+   const { commandName, instance } = command
+   const { guild, message, interaction } = usage
 
-  if (!guild || !instance.isConnectedToDB) {
-    return true
-  }
+   if (!guild || !instance.isConnectedToDB)
+      return true
 
-  if (
-    instance.commandHandler.disabledCommands.isDisabled(guild.id, commandName)
-  ) {
-    const content = 'This command is disabled'
+   if (
+      instance.commandHandler.disabledCommands.isDisabled(guild.id, commandName)
+   ) {
+      const content = 'This command is disabled'
 
-    if (message) {
-      message.channel.send({ content })
-    } else if (interaction) {
-      interaction.reply({ content, ephemeral: true })
-    }
+      if (message)
+         message.channel.send({ content })
 
-    return false
-  }
+      else if (interaction)
+         interaction.reply({ content, ephemeral: true })
 
-  return true
+      return false
+   }
+
+   return true
 }
