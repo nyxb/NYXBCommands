@@ -5,23 +5,30 @@
  [![Discord][discord-src]][discord-href]
 [![License][license-src]][license-href]
 
-# WOKCommands
+# NYXBCommands
 
-WOKCommands is a Discord.JS command handler made by [Worn Off Keys](https://youtube.com/wornoffkeys). The goal of this package is to make it simple and easy to get your bot off the ground without worrying about your own command handler.
+NYXBCommands is a Discord.JS command handler made by [Nyxb](https://youtube.com/nyxbAcademy). The goal of this package is to make it simple and easy to get your bot off the ground without worrying about your own command handler.
 
 # Documentation
 
-The official documentation can be found here: https://docs.wornoffkeys.com
+The official documentation can be found here: https://docs.nyxb.zip
 
 # Installation
 
 ```bash
-npm install wokcommands
+#npm
+npm install @nyxb/commands
+
+#pnpm
+pnpm add @nyxb/commands
+
+#yarn
+yarn add @nyxb/commands
 ```
 
 # Support & Feature Requests
 
-This package is looking for feedback and ideas to help cover more use cases. If you have any ideas feel free to share them within the "💡 ｜ suggestions" channel in the [Worn Off Keys Discord server](http://wornoffkeys.com/discord).
+This package is looking for feedback and ideas to help cover more use cases. If you have any ideas feel free to share them within the "💡 ｜ suggestions" channel in the [Nyxb Academy Discord server](http://nyxb.zip/discord).
 
 ---
 
