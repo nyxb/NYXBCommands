@@ -1,21 +1,21 @@
-import Command from '../../Command'
-import { CommandUsage } from '../../../../typings'
+import type Command from '../../Command'
+import type { CommandUsage } from '../../../../typings'
 
 export default (command: Command, usage: CommandUsage) => {
-  const { guildOnly } = command.commandObject
-  const { guild, message, interaction } = usage
+   const { guildOnly } = command.commandObject
+   const { guild, message, interaction } = usage
 
-  if (guildOnly === true && !guild) {
-    const content = 'This command can only be ran within a guild/server.'
+   if (guildOnly === true && !guild) {
+      const content = 'This command can only be ran within a guild/server.'
 
-    if (message) {
-      message.reply({ content })
-    } else if (interaction) {
-      interaction.reply({ content, ephemeral: true })
-    }
+      if (message)
+         message.reply({ content })
 
-    return false
-  }
+      else if (interaction)
+         interaction.reply({ content, ephemeral: true })
 
-  return true
+      return false
+   }
+
+   return true
 }
