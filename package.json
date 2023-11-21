@@ -2,7 +2,7 @@
   "name": "@nyxb/commands",
   "version": "0.0.2",
   "author": "Dennis Ollhoff (contact@nyxb.email)",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/nyxb/commands"
@@ -12,7 +12,8 @@
   "typings": "./typings.d.ts",
   "scripts": {
     "tsc": "tsc -w --outDir dist --rootDir src --skipLibCheck",
-    "npmp": "tsc --outDir dist --rootDir src --skipLibCheck && npm publish"
+    "npmp": "tsc --outDir dist --rootDir src --skipLibCheck && npm publish",
+    "release": "bumping && pnpm run npmp"
   },
   "dependencies": {
     "discord.js": "^14.13.0",
