@@ -13,7 +13,12 @@
   "scripts": {
     "tsc": "tsc -w --outDir dist --rootDir src --skipLibCheck",
     "npmp": "tsc --outDir dist --rootDir src --skipLibCheck && npm publish",
-    "release": "bumping && pnpm run npmp"
+    "release": "bumping && pnpm run npmp",
+    "dev-docs": "pnpm --filter docs dev",
+    "build-docs": "pnpm --filter docs build",
+    "generate-docs": "pnpm --filter docs generate",
+    "preview-docs": "pnpm --filter docs preview",
+    "lint-docs": "pnpm --filter docs lint"
   },
   "dependencies": {
     "discord.js": "^14.13.0",
@@ -21,7 +26,7 @@
     "mongoose": "^6.11.6"
   },
   "devDependencies": {
-    "@nyxb/eslint-config": "^0.1.2",
+    "@nyxb/eslint-config": "^1.0.6",
     "@types/node": "^20.5.1",
     "bumping": "^9.2.1",
     "eslint": "^8.47.0",
