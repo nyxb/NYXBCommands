@@ -18,9 +18,7 @@
     "build-docs": "pnpm --filter docs build",
     "generate-docs": "pnpm --filter docs generate",
     "preview-docs": "pnpm --filter docs preview",
-    "lint-docs": "pnpm --filter docs lint",
-    "build-netlify": "cd docs && nuxi build",
-    "generate-netlify": "cd docs && nuxi generate"
+    "lint-docs": "pnpm --filter docs lint"
   },
   "dependencies": {
     "discord.js": "^14.13.0",
