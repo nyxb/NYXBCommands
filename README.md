@@ -11,7 +11,7 @@ NYXBCommands is a Discord.JS command handler made by [Nyxb](https://nyxb.nexus).
 
 # Documentation
 
-The official documentation can be found here: https://nyxbcommands.nyxb.nexus
+The official documentation can be found here: https://commands.nyxb.nexus
 
 # Installation
 
