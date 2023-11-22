@@ -11,14 +11,18 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@nuxt/devtools": "^0.5.5",
+    "@nuxt/devtools": "^1.0.3",
     "@nuxtjs/plausible": "^0.2.1",
     "@nyxb/eslint-config": "^1.0.6",
     "@types/node": "^20.2.5",
     "destr": "^2.0.2",
     "docux": "^1.0.5",
     "eslint": "^8.54.0",
+    "install": "^0.13.0",
+    "npm": "^10.2.4",
     "nuxt": "3.8.2",
+    "rollup": "^4.5.1",
+    "rollup-plugin-visualizer": "^5.9.2",
     "vue-template-compiler": "^2.7.15"
   }
 }
