@@ -8,18 +8,21 @@
     "url": "https://github.com/nyxb/commands"
   },
   "keywords": [],
-  "main": "./dist/index.js",
-  "typings": "./typings.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
+  "typings": "./dist/typings.d.ts",
   "scripts": {
+    "prepublish": "pnpm run build",
+    "build": "tsup src/index.ts --format cjs,esm --dts --sourcemap",
     "tsc": "tsc -w --outDir dist --rootDir src --skipLibCheck",
     "npmp": "tsc --outDir dist --rootDir src --skipLibCheck && npm publish",
-    "release": "bumping && pnpm run npmp",
-    "dev-docs": "pnpm --filter docs dev",
-    "build-docs": "pnpm --filter docs build",
-    "generate-docs": "pnpm --filter docs generate",
-    "preview-docs": "pnpm --filter docs preview",
-    "lint-docs": "pnpm --filter docs lint",
-    "netlify-deploy": "cd docs && pnpm generate"
+    "release": "bumping && pnpm publish"
   },
   "dependencies": {
     "discord.js": "^14.13.0",
@@ -31,6 +34,7 @@
     "@types/node": "^20.5.1",
     "bumping": "^9.2.1",
     "eslint": "^8.47.0",
+    "tsup": "^8.0.1",
     "typescript": "^5.1.6"
   }
 }
