@@ -1,17 +1,17 @@
-import {
+import type {
   ApplicationCommandOption,
+  ChatInputCommandInteraction,
   Client,
   Guild,
   GuildMember,
+  Message,
   TextChannel,
   User,
-  Message,
-  ChatInputCommandInteraction,
 } from 'discord.js'
 
 import CommandType from './src/util/CommandType'
 import CooldownTypes from './src/util/CooldownTypes'
-import Cooldowns from './src/util/Cooldowns'
+import type Cooldowns from './src/util/Cooldowns'
 import DefaultCommands from './src/util/DefaultCommands'
 
 export default class NYXB {
@@ -126,14 +126,14 @@ export interface CommandObject {
   delete?: boolean
 }
 
-export type FileData = {
+export interface FileData {
   filePath: string
   fileContents: any
 }
 
-export type AutocompleteChoice = {
-  name?: string,
-  value?: string,
+export interface AutocompleteChoice {
+  name?: string
+  value?: string
 }
 
 export class Command {
