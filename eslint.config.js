@@ -1,5 +1,8 @@
 const nyxb = require('@nyxb/eslint-config').default
 
 module.exports = nyxb({
-ignores: ["dist","**/dist/**","node_modules","**/node_modules/**"]
+  rules: {
+    'ts/no-redeclare': 0,
+  },
+  ignores: ['dist', '**/dist/**', 'node_modules', '**/node_modules/**'],
 })
